@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - POL-Pay</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 { color: #1E3A8A; }
+        h2 { color: #2563EB; margin-top: 30px; }
+        .update-date { color: #666; font-style: italic; }
+        .notice { background: #FFF8E1; border-left: 4px solid #F59E0B; padding: 12px 16px; border-radius: 6px; }
+        a { color: #2563EB; word-break: break-all; }
+    </style>
+</head>
+<body>
+    <h1>Politique de Confidentialité - POL-Pay</h1>
+    <p class="update-date">Dernière mise à jour : octobre 2026</p>
+
+    <h2>1. Introduction</h2>
+    <p>POL-Pay est une application mobile éditée par DigiForce-Solutions, destinée aux Réservistes Opérationnels de la Police Nationale pour le suivi personnel de leurs vacations, de leurs indemnités et de leur carnet de tir. Nous accordons une importance majeure à la protection de vos données personnelles.</p>
+    <div class="notice">
+        <p><strong>Application indépendante.</strong> POL-Pay est une application privée. Elle n'est ni affiliée, ni approuvée, ni gérée par la Police Nationale, le ministère de l'Intérieur ou toute autre administration, et ne représente aucune entité gouvernementale. Les montants calculés le sont à partir des valeurs que vous saisissez et n'ont aucune valeur officielle.</p>
+        <p>Sources officielles :<br>
+        <a href="https://www.police-nationale.interieur.gouv.fr/nous-rejoindre/nos-voies-dacces/devenir-reserviste/reserviste-operationnel">Réserve opérationnelle de la Police Nationale</a><br>
+        <a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000046325637">Taux d'indemnisation des réservistes : arrêté du 22 septembre 2022 (Légifrance)</a></p>
+    </div>
+
+    <h2>2. Données collectées</h2>
+    <p>L'application collecte uniquement les données que vous saisissez volontairement :</p>
+    <ul>
+        <li><strong>Informations de compte :</strong> adresse e-mail et mot de passe (géré par Firebase Authentication, jamais stocké en clair).</li>
+        <li><strong>Informations de profil :</strong> nom, prénom, grade, service d'affectation, montant et durée de vacation.</li>
+        <li><strong>Matricule et RIO (facultatifs) :</strong> chiffrés sur votre téléphone (AES-256-GCM) avant d'être enregistrés ; ils ne sont lisibles que depuis votre compte.</li>
+        <li><strong>Données de vacations :</strong> dates, durées, types de vacation, montants, références, commentaires, statuts de paiement, état de service fait signé.</li>
+        <li><strong>Carnet de tir :</strong> séances (date, lieu, moniteur, arme, ateliers, résultats, évaluations, observations) et photos de cible que vous ajoutez.</li>
+        <li><strong>Abonnement :</strong> identifiants de transaction fournis par Apple ou Google pour vérifier votre abonnement. Le paiement est entièrement géré par Apple ou Google : nous n'avons jamais accès à vos coordonnées bancaires.</li>
+    </ul>
+
+    <h2>3. Microphone (chronomètre de tir)</h2>
+    <p>Le chronomètre de tir (« shot timer ») utilise le micro uniquement pendant une série ou un test de détection, pour repérer les détonations. Le son est analysé en temps réel sur votre téléphone : <strong>aucun son n'est enregistré, conservé ni transmis</strong>. Seuls les temps des tirs sont conservés, dans la mémoire de votre téléphone (50 dernières séries). Le micro n'est jamais utilisé en dehors de cette fonction et vous pouvez refuser ou retirer l'autorisation dans les réglages du téléphone.</p>
+
+    <h2>4. Appareil photo et photos</h2>
+    <p>L'appareil photo et la galerie servent uniquement à ajouter des photos de cible à vos séances de tir, à votre demande. Les photos sont compressées puis enregistrées dans votre espace personnel.</p>
+
+    <h2>5. Utilisation des données</h2>
+    <p>Vos données sont utilisées exclusivement pour :</p>
+    <ul>
+        <li>permettre le fonctionnement de l'application ;</li>
+        <li>synchroniser vos données entre vos appareils ;</li>
+        <li>calculer vos montants et vos statistiques personnelles ;</li>
+        <li>vérifier votre abonnement Premium.</li>
+    </ul>
+    <p>Aucune publicité, aucun profilage, aucune revente.</p>
+
+    <h2>6. Stockage et sécurité</h2>
+    <p>Vos données sont hébergées par Google Firebase (Google Cloud Platform) :</p>
+    <ul>
+        <li><strong>Compte, profil, vacations et séances de tir :</strong> base de données située dans l'Union européenne.</li>
+        <li><strong>Photos de cible :</strong> espace de stockage situé aux États-Unis, chez Google, dans le cadre des garanties contractuelles de Google pour les transferts hors de l'Union européenne (clauses contractuelles types).</li>
+    </ul>
+    <p>Les échanges sont chiffrés (HTTPS). L'accès est protégé par des règles qui réservent chaque espace à son seul propriétaire.</p>
+
+    <h2>7. Partage des données</h2>
+    <p><strong>Nous ne vendons, n'échangeons ni ne transférons vos données personnelles à des tiers.</strong> Vos données sont strictement personnelles et ne sont accessibles que par vous. Nos seuls sous-traitants techniques sont Google (hébergement Firebase) et Apple ou Google pour la gestion des abonnements.</p>
+
+    <h2>8. Vos droits</h2>
+    <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+    <ul>
+        <li><strong>Accès et rectification :</strong> consultez et modifiez vos informations à tout moment dans l'application.</li>
+        <li><strong>Portabilité :</strong> exportez vos vacations depuis l'application.</li>
+        <li><strong>Suppression :</strong> voir ci-dessous.</li>
+        <li><strong>Réclamation :</strong> vous pouvez saisir la CNIL (<a href="https://www.cnil.fr">www.cnil.fr</a>).</li>
+    </ul>
+
+    <h2 id="suppression">9. Supprimer votre compte et vos données</h2>
+    <p>Pour supprimer votre compte POL-Pay et toutes les données associées (profil, vacations, carnet de tir, photos), envoyez une demande depuis l'adresse e-mail de votre compte à <strong>contact@digiforce-solutions.fr</strong>, avec l'objet « Suppression de compte POL-Pay ». Nous supprimons votre compte et l'ensemble de vos données sous 30 jours et vous le confirmons par e-mail.</p>
+    <p>Les séries du chronomètre de tir sont stockées uniquement sur votre téléphone : elles sont effacées en désinstallant l'application. Un abonnement en cours se résilie depuis votre compte Apple ou Google.</p>
+
+    <h2>10. Conservation des données</h2>
+    <p>Vos données sont conservées tant que votre compte est actif. En cas de suppression, elles sont définitivement effacées sous 30 jours.</p>
+
+    <h2>11. Contact</h2>
+    <p>Pour toute question concernant cette politique de confidentialité :</p>
+    <p><strong>DigiForce-Solutions</strong><br><strong>E-mail :</strong> contact@digiforce-solutions.fr</p>
+
+    <h2>12. Modifications</h2>
+    <p>Cette politique peut être mise à jour occasionnellement. Les utilisateurs seront informés de tout changement significatif via l'application.</p>
+</body>
+</html>
